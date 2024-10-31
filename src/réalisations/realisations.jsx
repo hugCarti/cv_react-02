@@ -11,7 +11,7 @@ const Realisations = () => {
         <div className="container">
             <Nav />
             <div className="bg-blue-900 h-48 flex items-center justify-center">
-                <img src={Banner} alt="Background with abstract blue lines" className="w-full h-full object-cover" />
+                <img src={Banner} alt="Banner" className="w-full h-full object-cover" />
             </div>
             <main className="bg-gray-100 py-12">
                 <div className="text-center mb-12">

@@ -7,11 +7,11 @@ import FondCompetences from "../img/john-doe-about.jpg"
 const Accueil = () => {
     return (
         <div>
-            <Nav />    
+            <Nav />
             <section className="relative bg-cover bg-center h-screen" id="sec-image">
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="container mx-auto h-full flex flex-col justify-center items-center text-center text-white relative z-10">
-                    <h1 className="text-5xl font-bold mb-4">Bonjour, je suis John Doe</h1>
+                    <h1 className="text-5xl font-bold mb-4">Bonjour, je suis Hugo LEPLINGARD</h1>
                     <p className="text-2xl mb-6">Développeur web full stack</p>
                     <p className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">En savoir plus</p>
                 </div>
