@@ -1,18 +1,13 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Accueil from "../grenier/accueil"
-import Services from "../grenier/services";
-import Realisations from "../grenier/realisations";
-import Blog from "../grenier/blog";
-import Contact from "../grenier/contact";
 import { Link } from "react-router-dom";
+import Chemins from "./chemins";
 import "./nav.css";
 
 const Nav = () => {
     return (
         <div className="bandeau">
             <header>
-                <p className="logoNom"><strong>Hugo LEPLINGARD</strong></p>
+                <p className="nom">Hugo LEPLINGARD</p>
                 <nav>
                     <ul>
                         <li>
@@ -32,15 +27,9 @@ const Nav = () => {
                         </li>
                     </ul>
                 </nav>
+                <Chemins />
             </header>
 
-            <Routes>
-                <Route path='/' element={<Accueil />} />
-                <Route path='/services' element={<Services />} />
-                <Route path='/realisations' element={<Realisations />} />
-                <Route path='/blog' element={<Blog />} />
-                <Route path='/contact' element={<Contact />} />
-            </Routes>
         </div>
     )
 };

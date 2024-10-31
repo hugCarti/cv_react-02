@@ -1,6 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12,400,600&display=swap');
 
-.hiddenSection1 {
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+}
+
+.hidden-Section1 {
     display: none;
 }
 
@@ -11,4 +17,13 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.bas {
+    background-color: #CCC;
+}
+
+.bas img {
+    width: 
+    32px;
 }
