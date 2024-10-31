@@ -6,7 +6,7 @@ import FondCompetences from "../img/john-doe-about.jpg"
 
 const Accueil = () => {
     return (
-        <div>
+        <div  className="container">
             <Nav />
             <section className="relative bg-cover bg-center h-screen" id="sec-image">
                 <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -22,8 +22,8 @@ const Accueil = () => {
                         <h2 className="text-2xl font-bold mb-4">À propos</h2>
                         <p className="mb-4">Passionné par l'informatique et les nouvelles technologies, j'ai suivi une formation d'<strong>intégrateur-développeur web</strong> au CEF. 
                         Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du <strong>développement web</strong>.</p>
-                        <p className="mb-4">Basé à Sylvain les moulins, je suis en recherche d'une alternance au sein d'une agence digitale pour consolider ma formation de 
-                        <strong>développeur web full stack</strong>.</p>
+                        <p className="mb-4">Basé à Sylvain les moulins, je suis en recherche d'une alternance au sein d'une agence digitale pour consolider ma 
+                        formation de <strong>développeur web full stack</strong>.</p>
                         <p>J'accorde une attention particulière à la qualité du code que j'écris et je respecte les bonnes pratiques du web.</p>
                     </div>
                     <div className="w-1/3">

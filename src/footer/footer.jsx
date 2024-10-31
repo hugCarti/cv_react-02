@@ -11,11 +11,10 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold">John Doe</h4>
                         <p>5 rue de la côte rouge<br/>27240 Sylvain lès moulins, France<br/>Téléphone : 06 81 40 09 60</p>
-                        <div className="flex space-x-4 mt-4">
-                        <div class="flex space-x-4 mt-2">
-                            <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-github"></i></a>
-                            <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="text-gray-600 hover:text-gray-800"><i class="fab fa-linkedin"></i></a>
+                        <div className="flex space-x-4 mt-2">
+                            <a href="#" class="text-gray-600 hover:text-gray-800"><i className="fab fa-github"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800"><i className="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-gray-800"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div> 
                     <div>

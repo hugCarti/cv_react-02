@@ -1,9 +1,9 @@
-import Nav from './nav/nav';
+import Accueil from './accueil/accueil';
 
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <Accueil />
     </div>
   );
 }

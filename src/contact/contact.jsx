@@ -1,10 +1,12 @@
 
 
 import Footer from "../footer/footer.jsx"
+import Nav from "../nav/nav.jsx";
 
 const Contact = () => {
     return (
         <div className="container">
+            <Nav />
             <main className="container mx-auto my-8 p-4 bg-white shadow-lg">
                 <h2 className="text-3xl font-bold text-center">ME CONTACTER</h2>
                 <p className="text-center my-4">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
