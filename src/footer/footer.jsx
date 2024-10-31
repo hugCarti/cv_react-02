@@ -1,5 +1,7 @@
 
 import "./footer.css";
+import Navfooter from  "./nav-footer";
+
 
 const Footer = () => {
     return(
@@ -14,16 +16,9 @@ const Footer = () => {
                             <a href="#"><i className="fab fa-twitter"></i></a>
                             <a href="#"><i className="fab fa-linkedin-in"></i></a>
                         </div>
-                    </div>
+                    </div> 
                     <div>
-                        <h4 className="font-bold">Liens utiles</h4>
-                        <ul className="space-y-2">
-                            <li><a href="#" className="hover:underline">Accueil</a></li>
-                            <li><a href="#" className="hover:underline">À propos</a></li>
-                            <li><a href="#" className="hover:underline">Services</a></li>
-                            <li><a href="#" className="hover:underline">Me contacter</a></li>
-                            <li><a href="#" className="hover:underline">Mentions légales</a></li>
-                        </ul>
+                        <Navfooter />
                     </div>
                     <div>
                         <h4 className="font-bold">Mes dernières réalisations</h4>
@@ -37,7 +32,6 @@ const Footer = () => {
                             <li><a href="#" className="hover:underline">Coder son site en HTML/CSS</a></li>
                             <li><a href="#" className="hover:underline">Vendre ses produits sur le web</a></li>
                             <li><a href="#" className="hover:underline">Se positionner sur Google</a></li>
-                            
                         </ul>
                     </div>
                 </div>
@@ -48,8 +42,6 @@ const Footer = () => {
         </div>
     )
 };
-
-
 
 
 export default Footer
