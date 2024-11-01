@@ -1,8 +1,8 @@
 
-import React from "react";
 import Nav from "../nav/nav"
 import Footer from "../footer/footer"
 import FondCompetences from "../img/john-doe-about.jpg"
+import "./accueil.css"
 
 const Accueil = () => {
     return (

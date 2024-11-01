@@ -8,7 +8,7 @@ const Navfooter = () => {
         <div className="NavFooter">
             <nav>
                 <h4 className="font-bold">Liens utiles</h4>
-                <ul className="space-y-2">
+                <ul>
                     <li><Link to="/">Accueil</Link></li>
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/realisations">Réalisations</Link></li>
@@ -21,6 +21,5 @@ const Navfooter = () => {
         </div>
     )
 };
-
 
 export default Navfooter;
