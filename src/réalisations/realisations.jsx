@@ -1,6 +1,4 @@
 
-import Footer from "../footer/footer.jsx"
-import Nav from "../nav/nav.jsx"
 import Banner from "../img/banner.jpg"
 import Espacebienetre from "../img/portfolio/espace-bien-etre.jpg"
 import Freshfood from "../img/portfolio/fresh-food.jpg"
@@ -9,7 +7,6 @@ import Restaurantjaponais from "../img/portfolio/restaurant-japonais.jpg"
 const Realisations = () => {
     return (
         <div className="container">
-            <Nav />
             <div className="bg-blue-900 h-48 flex items-center justify-center">
                 <img src={Banner} alt="Banner" className="w-full h-full object-cover" />
             </div>
@@ -51,7 +48,6 @@ const Realisations = () => {
                     </div>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

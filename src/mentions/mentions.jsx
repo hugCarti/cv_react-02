@@ -1,11 +1,7 @@
 
-import Nav from "../nav/nav.jsx";
-import Footer from "../footer/footer.jsx"
-
 const Mentions = () => {
     return (
         <div className="container mx-auto mt-8">
-            <Nav />
             <h1 className="text-4xl font-bold text-center">MENTIONS LÉGALES</h1>
             <div className="border-b-2 border-blue-500 w-24 mx-auto mt-2"></div>
             <div className="mt-8 bg-white shadow-md rounded-lg">
@@ -43,7 +39,6 @@ const Mentions = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

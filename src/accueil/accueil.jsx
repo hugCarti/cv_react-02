@@ -1,13 +1,10 @@
 
-import Nav from "../nav/nav"
-import Footer from "../footer/footer"
 import FondCompetences from "../img/john-doe-about.jpg"
 import "./accueil.css"
 
 const Accueil = () => {
     return (
         <div  className="container">
-            <Nav />
             <section className="relative bg-cover bg-center h-screen" id="sec-image">
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="container mx-auto h-full flex flex-col justify-center items-center text-center text-white relative z-10">
@@ -62,7 +59,6 @@ const Accueil = () => {
                     </div>
                 </div>
             </section>
-            <Footer />
         </div>
     );
 };

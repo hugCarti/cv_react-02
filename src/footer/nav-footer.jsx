@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Chemins from "../nav/chemins";
-
 
 const Navfooter = () => {
     return (
@@ -17,7 +15,6 @@ const Navfooter = () => {
                     <li><Link to="/mentions">Mentions légales</Link></li>
                 </ul>
             </nav>
-            <Chemins />
         </div>
     )
 };

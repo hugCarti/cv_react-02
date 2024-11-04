@@ -1,12 +1,9 @@
 
-import Nav from "../nav/nav.jsx";
-import Footer from "../footer/footer.jsx"
 import Banner from "../img/banner.jpg"
 
 const Services = () => {
     return (
         <div className="container">
-            <Nav />
             <div className="relative">
                 <img src={Banner} alt="Abstract blue background" className="w-full h-64 object-cover"/>
             </div>
@@ -32,7 +29,6 @@ const Services = () => {
                     </div>
                 </div>
             </main>
-            <Footer />
         </div>
     );
 }

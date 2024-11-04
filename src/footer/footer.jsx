@@ -7,7 +7,7 @@ const Footer = () => {
     return(
         <div className="footer">
             <footer className="bg-gray-200 py-8">
-                <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div>
                         <h4 className="font-bold">John Doe</h4>
                         <p>5 rue de la côte rouge<br/>27240 Sylvain lès moulins, France<br/>Téléphone : 06 81 40 09 60</p>
