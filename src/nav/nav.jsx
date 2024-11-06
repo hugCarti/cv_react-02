@@ -4,7 +4,7 @@ import "./nav.css";
 
 const Nav = () => {
     return (
-        <div class="nav">
+        <header>
             <nav>
                 <div class="logo-nom">
                     <Link to="/">Hugo LEPLINGARD</Link>
@@ -17,7 +17,7 @@ const Nav = () => {
                     <li><Link to="/contact">ME CONTACTER</Link></li>
                 </ul>
             </nav>
-        </div>
+        </header>
     )
 };
 

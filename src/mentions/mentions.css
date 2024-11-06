@@ -1,19 +1,80 @@
 
-.accordion {
-    cursor: pointer;
-    padding: 18px;
+.mentions aside {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.mentions aside h1 {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.mentions aside div {
+    justify-self: center;
+    margin-top: 1rem;
+    width: 15rem;
+    height: 0.25rem;
+    background-color: #0d6efd;
+}
+
+.mentions main {
+    margin: 5rem 10rem 3rem;
+    background-color: #EEE;
+    border-radius: 0.5rem;
+    border: solid 1px #AAA;
+    border-top: hidden;
+    font-size: 1.5rem;
+
+    :focus {
+        outline: none;
+        background-color: rgba(0,105, 255, 0.2);
+        border: solid 3px rgba(0,105, 255, 0.3);
+    }
+}
+
+.mentions main button {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px #AAA;
+    align-items: center;
+    padding: 1rem 1.5rem;
     width: 100%;
     text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
 }
-.active, .accordion:hover {
-    background-color: #f1f1f1;
+
+.mentions main button img {
+    border-bottom-width: 1px;
+    margin-right: 2rem;
+    width: 1.5rem;
 }
-.panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
+
+.mentions main article {
+    padding: 3rem;
+    padding-top: 0;
+    background-color: #EEE;
     overflow: hidden;
+}
+
+.mentions main article ul {
+    margin-top: 1rem;
+}
+
+.mentions main article ul li h2 {
+    font-size: 2rem;
+}
+
+.mentions main article ul li p  {
+    display: flex;
+    font-size: 1.25rem;
+}
+
+.mentions main article ul li p img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.mentions main article ul li p a {
+    color: #0d6efd; 
+    margin-left: 0.5rem;
 }

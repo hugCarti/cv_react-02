@@ -1,38 +1,44 @@
 
-.nav {
+header {
     top: 0;
     background-color: #333;
     padding: 1rem;
 }
 
-.nav nav {
+header nav {
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
 }
 
-.logo-nom {
-    font-size: 1.25rem;
+header nav .logo-nom {
+    font-size: 1.5rem;
     line-height: 1.75rem;
     font-weight: 600;
-    color: #CCC;
+    margin-left: 4rem;
+    color: #DDD;
 }
 
-.logo-nom :hover {
+header nav .logo-nom :hover {
+    opacity: 0.8;
     color: #FFF;
 }
 
-.nav ul {
+header nav ul {
+    font-size: 1.25rem;
     display: flex; 
     padding: 1rem; 
+    margin-right: 2rem;
     justify-content: space-between; 
     align-items: center; 
+    flex-wrap: wrap;
 }
-.nav ul li {
+header nav ul li {
     color: #CCC;
     margin: 0 1rem;
     text-decoration: none;
 }
-.nav ul li:hover {
+header nav ul li:hover {
     color: #FFF;
+    opacity: 0.8;
 }

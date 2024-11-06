@@ -5,7 +5,7 @@ const Navfooter = () => {
     return (
         <div className="NavFooter">
             <nav>
-                <h4 className="font-bold">Liens utiles</h4>
+                <h4><strong>Liens utiles</strong></h4>
                 <ul>
                     <li><Link to="/">Accueil</Link></li>
                     <li><Link to="/services">Services</Link></li>

@@ -8,3 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+  color: #444;
+}
+
+strong {
+  color: #000;
+}
