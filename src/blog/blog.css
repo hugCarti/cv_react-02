@@ -27,6 +27,8 @@
     font-size: 3rem;
     line-height: 2.5rem;
     margin-bottom: 1.25rem;
+    font-weight: 600;
+    color: #1e1e1e;
 }
 
 .blog main section p {
@@ -81,6 +83,7 @@
     font-size: 2rem;
     line-height: 1.75rem;
     font-weight: 600;
+    color: #1e1e1e;
 }
 
 .blog main article figure p {
