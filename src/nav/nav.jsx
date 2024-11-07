@@ -2,13 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./nav.css";
 
-const Nav = () => {
+const NavigationBar = () => {
     return (
-        <header>
+        <header className="p-4">
             <nav>
-                <div class="logo-nom">
-                    <Link to="/">Hugo LEPLINGARD</Link>
-                </div>
+                <h2>Hugo LEPLINGARD</h2>
                 <ul>
                     <li><Link to="/">ACCUEIL</Link></li>
                     <li><Link to="/services">SERVICES</Link></li>
@@ -21,4 +19,5 @@ const Nav = () => {
     )
 };
 
-export default Nav;
+export default NavigationBar;
+

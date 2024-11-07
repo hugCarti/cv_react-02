@@ -1,115 +1,33 @@
 
-.realisation aside {
+.realisations aside {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #EEE;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 12rem;
-}
+    height: 250px;
+  }
 
-.realisation aside img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.realisation main {
-    padding: 5rem;
-    background-color: #EEE;
-}
-
-.realisation main section {
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.realisation main section h1 {
+.realisations main h1 {
     font-size: 3rem;
-    line-height: 2.5rem;
-    margin-bottom: 1.25rem;
     font-weight: 600;
     color: #1e1e1e;
 }
 
-.realisation main section p {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+.realisations main p {
+    font-size: 1.2rem;
 }
 
-.realisation main section div {
-    justify-self: center;
-    margin-top: 0.75rem;
-    width: 15rem;
+.realisations main .barre-bleu {
+    width: 16rem; 
     height: 0.25rem;
-    background-color: #0d6efd;
 }
 
-.realisation main article {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 2rem;
-    padding: 0 1rem;
-
-    @media (min-width: 768px) {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
-.realisation main article figure {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; 
-    overflow: hidden;
-    border-radius: 0.5rem;
-    background-color: #EEE;
-    border: 0.5px solid #444;
-    height: 100%;
-}
-
-.realisation main article figure .figure-txt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.realisation main article figure button {
-    padding: 0.5rem 1rem;
-    margin: 1rem 0;
-    border-radius: 0.25rem;
-    border-width: 1px;
-    border-color: #0d6efd;
-    color: #0d6efd;
-    background-color: #EEE;
-    align-self: center;
-}
-
-.realisation main article figure img {
-    object-fit: cover;
-    width: 100%;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-}
-
-.realisation main article figure h2 {
-    font-size: 1.25rem;
-    justify-self: center;
-    line-height: 1.75rem;
+.realisations main article h2 {
     font-weight: 600;
     color: #1e1e1e;
 }
 
-.realisation main article figure p {
-    text-align: center;
-    margin: 0;
-    padding: 0.5rem;
-}
-
-.realisation main article figure .txt-bas {
-    color: #444;
-    width: 100%;
-    border-top: 0.5px solid #444;
-    background-color: #DDD;
-    text-align: center;
+.realisations main article p {
+    font-size: 1rem;
 }

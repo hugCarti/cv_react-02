@@ -2,42 +2,56 @@
 import "./contact.css"
 import Position from "../img/favicon/position.png"
 import Telephone from "../img/favicon/telephone.png"
+import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
-const Contact = () => {
+function Contact() {
     return (
-        <div className="contact">
-            <div className="voile-bleu">
-                <main>
-                    <section>
-                        <h1>ME CONTACTER</h1>
-                        <p>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
-                        <div></div>
-                    </section>
-                    <article>
-                        <figure>
+        <Container fluid className="contact">
+            <div className="voile">
+                <Container className="bg-white p-5 shadow-sm">
+                    <h1 className="text-center mb-4">ME CONTACTER</h1>
+                    <p className="text-center f">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
+                    <div class="barre-bleu mx-auto mt-3 mb-5 bg-primary"></div>
+                    <Row className="mt-4">
+                        <Col md={6}>
                             <h2>Formulaire de contact</h2>
-                            <form>
-                                <input type="text" placeholder="Votre nom"/>
-                                <input type="email" placeholder="Votre adresse email"/>
-                                <input type="tel" placeholder="Votre numéro de téléphone"/>
-                                <input type="text" placeholder="Sujet"/>
-                                <textarea placeholder="Votre message" />
-                                <button type="submit">Envoyer</button>
-                            </form>
-                        </figure>
-                        <figure>
+                            <div class="barre-bleu-2 mt-3 mb-3 bg-primary"></div>
+                            <Form>
+                            <Form.Group controlId="formName">
+                                <Form.Control type="text" placeholder="Votre nom" />
+                            </Form.Group>
+                            <Form.Group controlId="formEmail" className="mt-3">
+                                <Form.Control type="email" placeholder="Votre adresse email" />
+                            </Form.Group>
+                            <Form.Group controlId="formPhone" className="mt-3">
+                                <Form.Control type="text" placeholder="Votre numéro de téléphone" />
+                            </Form.Group>
+                            <Form.Group controlId="formSubject" className="mt-3">
+                                <Form.Control type="text" placeholder="Sujet" />
+                            </Form.Group>
+                            <Form.Group controlId="formMessage" className="mt-3">
+                                <Form.Control as="textarea" rows={4} placeholder="Votre message" />
+                            </Form.Group>
+                            <Button variant="primary" type="submit" className="mx-auto mt-4">Envoyer</Button>
+                            </Form>
+                        </Col>
+                        <Col md={6}>
                             <h2>Mes coordonnées</h2>
-                            <div>
-                                <p><img src={Position} alt="position"/> 5 rue de la côte rouge, Sylvain lès moulins</p>
-                                <p><img src={Telephone} alt="telephone"/> 06 81 40 09 60</p>
-                                <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.835197509374!2d4.805528315502276!3d45.77966497910656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c1d1b1b1b1b1%3A0x1b1b1b1b1b1b1b1b!2s5%20Rue%20de%20la%20côte%20rouge%2C%2069009%20Sylvain%20lès%20moulins%2C%20France!5e0!3m2!1sen!2sus!4v1633024800000!5m2!1sen!2sus'
-                                width="100%" height="200" allowFullScreen="" loading="lazy"></iframe> 
+                            <div class="barre-bleu-2 mt-3 mb-3 bg-primary"></div>
+                            <p><img src={Position} className="mr-2" />40 Rue Laure Diebold, 69009 Lyon, France</p>
+                            <p><img src={Telephone} className="mr-2" />Téléphone : 06 20 30 40 50</p>
+                            <div className="embed-responsive embed-responsive-16by9">
+                                <iframe
+                                    title="Google Map Location"className="embed-responsive-item"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.8730577411963!2d4.804118275024013!3d45.77788887115619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c05a3a5c6fdb%3A0xb7c9eec03bc54d27!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon%2C%20France!5e0!3m2!1sen!2sfr!4v1639567527400!5m2!1sen!2sfr"
+                                    width="100%" height="250" allowFullScreen="" loading="lazy">
+                                </iframe>
                             </div>
-                        </figure>
-                    </article>
-                </main>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
-        </div>
+        </Container>
     );
 }
 
