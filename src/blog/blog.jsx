@@ -1,4 +1,5 @@
 
+import Banner from "../img/banner.jpg"
 import Coder from "../img/blog/coder.jpg"
 import Croissance from "../img/blog/croissance.jpg"
 import Google from "../img/blog/google.jpg"
@@ -28,7 +29,7 @@ function Sujets(props) {
 const Blog = () => {
     return (
         <div className="blog">
-            <aside className="d-flex justify-content-center align-items-center text-center"></aside>
+            <img src={Banner} alt="banner" className="banner w-100"/>
             <main className="py-5 bg-light">
                 <div className="container text-center">
                     <h1>BLOG</h1>

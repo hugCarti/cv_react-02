@@ -6,7 +6,7 @@ import Realisations from  "./réalisations/realisations"
 import Blog from  "./blog/blog";
 import Contact from "./contact/contact";
 import Mentions from  "./mentions/mentions";
-import NavigationBar from "./nav/nav";
+import Nav from "./nav/nav";
 import Footer from "./footer/footer";
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavigationBar />
+      <Nav />
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/services" element={<Services />} />

@@ -1,13 +1,4 @@
 
-.realisations aside {
-    background-image: url(../img/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #EEE;
-    display: flex;
-    height: 250px;
-  }
-
 .realisations main h1 {
     font-size: 3rem;
     font-weight: 600;
@@ -30,4 +21,8 @@
 
 .realisations main article p {
     font-size: 1rem;
+}
+
+.realisations .card-footer {
+    background-color: #eaeaea;
 }

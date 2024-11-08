@@ -1,6 +1,46 @@
 
 .accueil aside {
-    min-height: '70vh';
-    background-image: 'url(../img/hero-bg.jpg)';
-    background-size: 'cover';
+    height: 50rem;
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+}
+
+.accueil aside .voile {
+    background-color: rgba(0,0, 0, 0.3);
+}
+
+.accueil aside h1 {
+    font-size: 4.5rem;
+}
+
+.accueil aside h2 {
+    font-size: 2.5rem;
+}
+
+.accueil main {
+    border-radius: 15px;
+    box-shadow: 1px #000;
+    margin: 3rem 7rem;
+}
+
+.accueil main .barre-bleu {
+    height: 0.1rem;
+}
+
+.accueil main img {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.accueil main p {
+    font-size: 1.3rem;
+}
+
+.accueil h2{
+    font-size: 3rem;
+}
+
+.accueil h3{
+    font-size: 2rem;
+
 }

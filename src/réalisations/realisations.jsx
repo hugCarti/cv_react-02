@@ -1,4 +1,5 @@
 
+import Banner from "../img/banner.jpg"
 import Espacebienetre from "../img/portfolio/espace-bien-etre.jpg"
 import Freshfood from "../img/portfolio/fresh-food.jpg"
 import Restaurantjaponais from "../img/portfolio/restaurant-japonais.jpg"
@@ -14,7 +15,7 @@ function Projets(props) {
                     <p className="card-text mb-3">{props.txt}</p>
                     <button className="btn bg-light text-primary border border-primary">Voir</button>
                 </div>
-                <div className="card-footer text-dark fs-6">
+                <div className="card-footer p-2 text-dark fs-6">
                     {props.txtBas}
                 </div>
             </figure>
@@ -25,7 +26,7 @@ function Projets(props) {
 function Realisations() {
     return (
         <div className="realisations">
-            <aside className="d-flex justify-content-center align-items-center text-center"></aside>
+            <img src={Banner} alt="banner" className="banner w-100"/>
             <main className="py-5 bg-light">
                 <div className="container text-center">
                     <h1>PORTFOLIO</h1>

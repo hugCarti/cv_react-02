@@ -17,13 +17,13 @@ const Services = () => {
             <Row className="text-center m-5">
                 <Col md={4} className="mb-4">
                     <Card className="p-5 shadow-sm">
-                    <Card.Body>
-                        <img src={Ecran} className="mt-5 mb-4" />
-                        <h2>UX DESIGN</h2>
-                        <Card.Text className=" mb-5">
-                        L'UX Design est une méthode de conception centrée sur l’utilisateur. Son but est d’offrir une expérience de navigation optimale à l’internaute.
-                        </Card.Text>
-                    </Card.Body>
+                        <Card.Body>
+                            <img src={Ecran} className="mt-5 mb-4" />
+                            <h2>UX DESIGN</h2>
+                            <Card.Text className=" mb-5">
+                                L'UX Design est une méthode de conception centrée sur l’utilisateur. Son but est d’offrir une expérience de navigation optimale à l’internaute.
+                            </Card.Text>
+                        </Card.Body>
                     </Card>
                 </Col>
                 <Col md={4} className="mb-4">

@@ -1,64 +1,25 @@
-
 footer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     background-color: #DDD;
 }
 
-footer .container {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 2rem;
-    margin-left: 2rem;
-
-    @media (min-width: 768px) { 
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-}
-
-footer h4 {
-    font-weight: 600;
+footer ul li a {
+    text-decoration: none;
     color: #1e1e1e;
 }
 
-footer p {
-    margin-top: 0.5rem;
-    color: #444;
+footer .gauche a {
+    margin-left: 1rem;
 }
 
-footer .container-fav {
-    display: flex;
-    margin-top: 0.5rem;
-    margin-left: 1.5rem;
-}
-
-footer .container-fav a{
-    width: 30px;
-    margin-right: 10px;
-}
-
-footer ul {
-    margin-top: 0.5rem;
-}
-
-footer ul li{
-    margin-top: 0.5rem;
-    color: #444;
-    list-style-image: url('../img/favicon/fleche.png');
-    size: 10px;
-
-    :hover {
-        color: #000;
-    }
+footer .gauche a img {
+    width: 2rem;
+    height: 2rem;
 }
 
 footer .bas {
     background-color: #000;
-    margin-top: 2rem;
-    text-align: center;
 }
 
-footer .bas p{ 
+footer .bas p {
     color: #EEE;
-    padding: 15px;
 }

@@ -1,7 +1,17 @@
 
 header {
     top: 0;
-    background-color: #333;
+    background-color: #222;
+}
+
+header h2 {
+    display: none;
+}
+
+header img {
+    width: 5rem;
+    background-color: #222;
+    display: block;
 }
 
 header nav {
@@ -10,34 +20,31 @@ header nav {
     align-items: center; 
 }
 
-header nav .logo-nom {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    font-weight: 600;
-    margin-left: 4rem;
-    color: #DDD;
+@media (min-width: 1024px) {
+    header h2 {
+        display: block;
+    }
+
+    header img {
+        display: none;
+    }
 }
 
-header nav .logo-nom :hover {
-    opacity: 0.8;
-    color: #FFF;
-}
-
-header nav ul {
-    font-size: 1.25rem;
-    display: flex; 
-    padding: 1rem; 
-    margin-right: 2rem;
-    justify-content: space-between; 
-    align-items: center; 
+header ul {
     flex-wrap: wrap;
 }
-header nav ul li {
-    color: #CCC;
-    margin: 0 1rem;
-    text-decoration: none;
+
+header ul li {
+    font-size: 1.2rem;
+    margin-right: 1.4rem;
+    text-transform: uppercase;
 }
-header nav ul li:hover {
-    color: #FFF;
-    opacity: 0.8;
+
+header nav a {
+    color: #BBB;
+}
+
+header nav a:hover {
+    color: #EEE;
+    text-decoration: none;
 }

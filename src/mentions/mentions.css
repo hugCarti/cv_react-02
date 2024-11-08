@@ -1,84 +1,52 @@
 
-.mentions aside {
-    margin: 3rem 0;
-    text-align: center;
-}
-
 .mentions aside h1 {
     font-size: 3rem;
-    line-height: 2.5rem;
-    margin-bottom: 1.25rem;
-    font-weight: 600;
-    color: #1e1e1e;
 }
 
-.mentions aside div {
-    justify-self: center;
-    margin-top: 1rem;
-    width: 15rem;
+.mentions aside .barre-bleu {
+    width: 16rem;
     height: 0.25rem;
-    background-color: #0d6efd;
 }
 
 .mentions main {
     margin: 5rem 10rem 3rem;
-    background-color: #EEE;
-    border-radius: 0.5rem;
-    border: solid 1px #AAA;
-    border-top: hidden;
-    font-size: 1.5rem;
-
-    :focus {
-        outline: none;
-        background-color: rgba(0,105, 255, 0.2);
-        border: solid 3px rgba(0,105, 255, 0.3);
-    }
 }
 
 .mentions main button {
-    display: flex;
-    justify-content: space-between;
-    border-top: solid 1px #AAA;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    width: 100%;
-    text-align: left;
+    border: solid 1px #DDD;
+    background-color: #FFF;
 }
 
-.mentions main button img {
-    border-bottom-width: 1px;
-    margin-right: 2rem;
-    width: 1.5rem;
-}
-
-.mentions main article {
-    padding: 3rem;
-    padding-top: 0;
-    background-color: #EEE;
-    overflow: hidden;
-}
-
-.mentions main article ul {
-    margin-top: 1rem;
-}
-
-.mentions main article ul li h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #1e1e1e;
-}
-
-.mentions main article ul li p  {
-    display: flex;
+.mentions main button {
     font-size: 1.25rem;
 }
 
-.mentions main article ul li p img {
+.mentions main button:focus {
+    outline: none;
+    background-color: rgba(0, 105, 255, 0.1);
+    color: #004ec2;
+}
+
+.mentions main img {
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.mentions main article ul li p a {
-    color: #0d6efd; 
-    margin-left: 0.5rem;
+.mentions main article {
+    border: solid 1px #CCC;
+    background-color: #FFF;
+}
+
+.mentions main article img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.mentions main article h3 {
+    font-size: 2rem;
+}
+
+.mentions article ul li a {
+    text-decoration: none;
+    color: #0d6efd;
 }

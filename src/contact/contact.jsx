@@ -8,37 +8,37 @@ function Contact() {
     return (
         <Container fluid className="contact">
             <div className="voile">
-                <Container className="bg-white p-5 shadow-sm">
+                <div className="bg-white p-5 shadow-sm">
                     <h1 className="text-center mb-4">ME CONTACTER</h1>
                     <p className="text-center f">Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
                     <div class="barre-bleu mx-auto mt-3 mb-5 bg-primary"></div>
-                    <Row className="mt-4">
+                    <Row>
                         <Col md={6}>
                             <h2>Formulaire de contact</h2>
                             <div class="barre-bleu-2 mt-3 mb-3 bg-primary"></div>
-                            <Form>
-                            <Form.Group controlId="formName">
-                                <Form.Control type="text" placeholder="Votre nom" />
-                            </Form.Group>
-                            <Form.Group controlId="formEmail" className="mt-3">
-                                <Form.Control type="email" placeholder="Votre adresse email" />
-                            </Form.Group>
-                            <Form.Group controlId="formPhone" className="mt-3">
-                                <Form.Control type="text" placeholder="Votre numéro de téléphone" />
-                            </Form.Group>
-                            <Form.Group controlId="formSubject" className="mt-3">
-                                <Form.Control type="text" placeholder="Sujet" />
-                            </Form.Group>
-                            <Form.Group controlId="formMessage" className="mt-3">
-                                <Form.Control as="textarea" rows={4} placeholder="Votre message" />
-                            </Form.Group>
-                            <Button variant="primary" type="submit" className="mx-auto mt-4">Envoyer</Button>
+                            <Form className="mt-4 f-grid">
+                                <Form.Group controlId="formName">
+                                    <Form.Control type="text" placeholder="Votre nom" />
+                                </Form.Group>
+                                <Form.Group controlId="formEmail" className="mt-3">
+                                    <Form.Control type="email" placeholder="Votre adresse email" />
+                                </Form.Group>
+                                <Form.Group controlId="formPhone" className="mt-3">
+                                    <Form.Control type="text" placeholder="Votre numéro de téléphone" />
+                                </Form.Group>
+                                <Form.Group controlId="formSubject" className="mt-3">
+                                    <Form.Control type="text" placeholder="Sujet" />
+                                </Form.Group>
+                                <Form.Group controlId="formMessage" className="mt-3">
+                                    <Form.Control as="textarea" rows={4} placeholder="Votre message" />
+                                </Form.Group>
+                                <Button variant="primary" type="submit" className="py-2 px-3 mt-4">Envoyer</Button>
                             </Form>
                         </Col>
                         <Col md={6}>
                             <h2>Mes coordonnées</h2>
-                            <div class="barre-bleu-2 mt-3 mb-3 bg-primary"></div>
-                            <p><img src={Position} className="mr-2" />40 Rue Laure Diebold, 69009 Lyon, France</p>
+                            <div class="barre-bleu-2 w-100 mt-3 mb-3 bg-primary"></div>
+                            <p className="mb-0 mt-4"><img src={Position} className="mr-2" />40 Rue Laure Diebold, 69009 Lyon, France</p>
                             <p><img src={Telephone} className="mr-2" />Téléphone : 06 20 30 40 50</p>
                             <div className="embed-responsive embed-responsive-16by9">
                                 <iframe
@@ -49,7 +49,7 @@ function Contact() {
                             </div>
                         </Col>
                     </Row>
-                </Container>
+                </div>
             </div>
         </Container>
     );

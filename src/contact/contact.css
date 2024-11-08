@@ -1,6 +1,7 @@
 
 .contact {
     background-image: url("../img/contact-bg.jpg");
+    background-size: cover;
     padding: 0;
 }
 
@@ -27,7 +28,6 @@
 }
 
 .contact .barre-bleu-2 {
-    width: 100%; 
     height: 0.1rem;
 }
 
@@ -41,6 +41,5 @@
 }
 
 .contact button {
-    justify-self: center;
-    align-self: center;
+    margin-left: 40%;
 }

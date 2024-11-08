@@ -8,8 +8,9 @@ import "./mentions.css";
 
 function Ouvrir({ title, onClick }) {
     return (
-        <button onClick={onClick}>
-            {title} <img src={Bas} alt="flèche bas" />
+        <button onClick={onClick} className="d-flex justify-content-between align-items-center w-100 text-start py-3 px-4">
+            {title}
+            <img src={Bas} alt="flèche bas" className='me-3' />
         </button>
     );
 }
@@ -25,43 +26,43 @@ const Mentions = () => {
     };
 
     return (
-        <div className="mentions">
-            <aside>
-                <h1>MENTIONS LÉGALES</h1>
-                <div></div>
+        <div className="mentions mt-5">
+            <aside className="text-center mb-4">
+                <h1 className="fw-bold text-dark mb-4">MENTIONS LÉGALES</h1>
+                <div class="barre-bleu mx-auto mt-3 mb-4 bg-primary"></div>
             </aside>
             <main>
                 <Ouvrir title="Éditeur du site" onClick={() => toggleSection('editeur')} />
                 {openSection === 'editeur' && (
-                    <article>
-                        <ul>
-                            <li><h2>Hugo LEPLINGARD</h2></li>
-                            <li><p><img src={Position} alt="position" /> 5 rue de la côte rouge,<br />27240 Sylvain lès moulins, France</p></li>
-                            <li><p><img src={Telephone} alt="telephone" /> <a href="tel:+06 81 40 09 60">06 81 40 09 60</a></p></li>
-                            <li><p><img src={Mail} alt="mail" /> <a href="mailto:Hleplingard04@gmail.com">Hleplingard04@gmail.com</a></p></li>
+                    <article className="p-4">
+                        <ul className="list-unstyled mt-2">
+                            <li><h3 className="fw-bold text-dark mb-3">Hugo LEPLINGARD</h3></li>
+                            <li><p className="m-0"><img src={Position} alt="position" /> 5 Rue des Champs-Élisée<br />75001 Paris, France</p></li>
+                            <li><p className="m-0"><img src={Telephone} alt="telephone" /> <a className="text-primary ms-2" href="tel:+06 82 40 09 60">06 82 40 09 60</a></p></li>
+                            <li><p><img src={Mail} alt="mail" /> <a className="text-primary ms-2" href="mailto:Hleplingard05@gmail.com">Hleplingard05@gmail.com</a></p></li>
                         </ul>
                     </article>
                 )}
 
                 <Ouvrir title="Hébergeur" onClick={() => toggleSection('hebergeur')} />
                 {openSection === 'hebergeur' && (
-                    <article>
-                        <ul>
-                            <li><h2>Always Data</h2></li>
-                            <li><p>91 rue Faubourg Saint Honoré</p></li>
+                    <article className="p-4">
+                        <ul className="list-unstyled mt-2">
+                            <li><h3 className="fw-bold text-dark mb-3">Render.com</h3></li>
+                            <li><p className="m-0">91 rue Faubourg Saint Honoré</p></li>
                             <li><p>75008 Paris</p></li>
-                            <li><p><img src={Internet} alt="internet" /><a href="http://www.alwaysdata.com"> www.alwaysdata.com</a></p></li>
+                            <li><p><img src={Internet} alt="internet" /><a className="text-primary ms-2" href="http://www.alwaysdata.com"> www.alwaysdata.com</a></p></li>
                         </ul>
                     </article>
                 )}
 
                 <Ouvrir title="Crédits" onClick={() => toggleSection('credits')} />
                 {openSection === 'credits' && (
-                    <article>
-                        <ul>
-                            <li><h2>Crédits</h2></li>
+                    <article className="p-4">
+                        <ul className="list-unstyled mt-2">
+                            <li><h3 className="fw-bold text-dark mb-3">Crédits</h3></li>
                             <li><p>Site développé par Hugo Leplingard, étudiant du CEF.</p></li>
-                            <li><p>Les images libres de droit sont issues du site <a href="https://pixabay.com">Pixabay</a>.</p></li>
+                            <li><p>Les images libres de droit sont issues du site <a className="text-primary ms-2" href="https://pixabay.com"> Pixabay</a>.</p></li>
                         </ul>
                     </article>
                 )}
